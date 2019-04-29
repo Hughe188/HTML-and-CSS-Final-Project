@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css" media="all"/>
+<link rel="stylesheet" href="css/print.css" media="print"/>
+<title>Gamers Hub</title>
+<style>
+body {
+    font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    display:flex;
+    justify-content:space-between;
+
+}
+div{
+    flex:1;
+}
+nav{
+    flex:1;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Online Games.html">Online Games</a>
+    <a href="PGDA.html">Popular Gaming Desktop apps</a>
+    <a href="PCAFG.html">Popular Communication apps for Gamers</a>
+    <a href="About Us.html">About Us</a>
+</nav>
+
+<div id="main">
+    <article>
+    <h1>Welcome to Gamers Hub</h1>
+    <section>
+    For those new to video game or those just out of touch with modern gaming.
+    We here at Gamers Hub have developed this site, in order to help you learn 
+    or relearn about online or PC gaming.
+    </section>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click here</span>
+    </article>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<header>
+        <img src="media/Pokeball.jpg" style="float:right; max-width:149px;" alt="Pokeball">
+        <h3>Pokemon</h3>
+</header>
+<footer> <p>&copy; Ethan Hughes, NMC</p></footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:1.5em;
+    background:tan;
+    color:white;
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color:linen;
+    text-align:left;
+    clear:both;
+    float:left;  
+}
+nav a {
+    text-decoration:none;
+}
+nav ul li {
+	list-style:none;
+	margin-left:-35px;
+	border-bottom:gray 2px solid;
+	border-left:gray 2px solid;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:white;
+    color:black;
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:black;
+    color:white;
+}
+a:link, a:visited, a:hover,a:active{
+	color:mediumseagreen;
+	text-shadow:1px 1px black;
+}
+h1{
+    color:darkorange;
+    text-shadow:1px 1px white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32pt;
+    text-decoration:bold;
+}
+h2{
+    color:darkorange;
+    text-shadow:1px 1px white;
+    font-size: 24pt;
+    text-decoration:underline;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Racing Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Racing Sans One'), local('RacingSansOne-Regular'), url(https://fonts.gstatic.com/s/racingsansone/v6/sykr-yRtm7EvTrXNxkv5jfKKyDCAJnDnapI.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Racing Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Racing Sans One'), local('RacingSansOne-Regular'), url(https://fonts.gstatic.com/s/racingsansone/v6/sykr-yRtm7EvTrXNxkv5jfKKyDCAKHDn.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+header{
+	width:10%;
+	top:0%;
+	color:seagreen;
+	height:auto;
+    opacity:0.8;
+    text-align:left;
+    text-shadow:1px 1px #555;
+}
+section{
+	opacity:.8;
+}
+summary{
+	color:#339966;
+	text-shadow:1px 1px #555;
+	font-size:1.1em;
+}
+aside {
+    background: linen;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+footer {
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+    opacity:.8;
+}
+img{
+	box-shadow:2px 2px #555;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overriden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{ 
+        max-width:1200px;
+        background-color:#111;
+    }
+}
